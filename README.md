@@ -1,4 +1,4 @@
-#🧾 Cheque Printer
+# 🧾 Cheque Printer
 
 <p align="center">
 <strong>A simple and efficient application for preparing and printing cheques.</strong>
