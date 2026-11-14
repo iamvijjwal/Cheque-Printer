@@ -1,8 +1,8 @@
-🧾 Cheque Printer
+#🧾 Cheque Printer
 
 <p align="center">
-<b>A simple and efficient application for preparing and printing cheques.</b>
-<br />
+<strong>A simple and efficient application for preparing and printing cheques.</strong>
+<br>
 Simplify cheque preparation, reduce manual effort, and make cheque printing easier.
 </p>
 
@@ -63,10 +63,12 @@ Open the local URL displayed in your terminal to access the application.
 
 📸 Screenshots
 
-Add screenshots of the application here.
+Add screenshots of the application here to showcase its interface and cheque printing functionality.
 
-<!-- Example:
+<!-- Add your screenshots below:
+
 ![Cheque Printer Home Page](screenshots/home.png)
+
 -->
 
 📁 Project Structure
@@ -80,7 +82,7 @@ Cheque-Printer/
 └── README.md
 
 
-Note: Update this structure to match the actual project files.
+Note: Update this structure according to the actual project files.
 
 💡 Future Improvements
 Support for multiple bank cheque formats.
@@ -95,20 +97,28 @@ Contributions, suggestions, and bug reports are always welcome!
 
 If you would like to contribute:
 
-Fork this repository.
-Create a new branch:
+1. Fork the repository.
+
+2. Create a new branch.
+
 bash
 git checkout -b feature/your-feature
 
-Commit your changes:
+
+3. Commit your changes.
+
 bash
 git commit -m "Add your feature"
 
-Push your branch:
+
+4. Push your branch.
+
 bash
 git push origin feature/your-feature
 
-Open a Pull Request.
+
+5. Open a Pull Request.
+
 📄 License
 
 Please refer to the repository's LICENSE file for licensing information.
@@ -118,10 +128,10 @@ Please refer to the repository's LICENSE file for licensing information.
 Vijjwal
 
 GitHub: @iamvijjwal
-Project: Cheque Printer
+Repository: Cheque Printer
 
 <p align="center">
 ⭐ If you find this project useful, consider giving it a star!
-<br />
-<b>Made with ❤️ by Vijjwal</b>
+<br><br>
+<strong>Made with ❤️ by Vijjwal</strong>
 </p>
