@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self';">
+
+  <title>ChequePrint</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <div>
+        <h1>ChequePrint</h1>
+        <p>Prepare and print your cheque.</p>
+      </div>
+    </header>
+
+    <!-- NEW CHEQUE FORM -->
+
+    <section id="new-cheque" class="page active">
+
+      <article class="content-card">
+
+        <div class="card-heading">
+          <div>
+            <h2>Cheque details</h2>
+            <p>Enter the details exactly as they should appear.</p>
+          </div>
+        </div>
+
+        <form id="cheque-form">
+
+          <div class="form-grid">
+
+            <div class="form-group full">
+              <label for="bank">Bank cheque layout</label>
+
+              <select id="bank">
+                <option value="idfc">IDFC FIRST Bank</option>
+                <option value="iob">Indian Overseas Bank</option>
+              </select>
+
+              <small class="hint">
+                Select the appropriate bank layout before printing.
+              </small>
+            </div>
+
+            <div class="form-group full">
+              <label for="payee">Payee name</label>
+
+              <input
+                id="payee"
+                type="text"
+                maxlength="100"
+                placeholder="Enter recipient name"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="date">Cheque date</label>
+
+              <input
+                id="date"
+                type="date"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="amount">Amount (₹)</label>
+
+              <input
+                id="amount"
+                type="number"
+                min="0.01"
+                max="999999999999.99"
+                step="0.01"
+                placeholder="0.00"
+                required
+              >
+            </div>
+
+            <div class="form-group full">
+              <label for="amount-words">Amount in words</label>
+
+              <input
+                id="amount-words"
+                type="text"
+                readonly
+                placeholder="Generated automatically"
+              >
+            </div>
+
+          </div>
+
+          <div class="form-actions">
+
+            <button
+              type="reset"
+              class="secondary-btn"
+              id="clear-form"
+            >
+              Clear
+            </button>
+
+            <button
+              type="button"
+              class="primary-btn"
+              id="preview-btn"
+            >
+              Preview cheque
+            </button>
+
+          </div>
+
+        </form>
+
+      </article>
+
+    </section>
+
+
+    <!-- CHEQUE PREVIEW -->
+
+    <section id="preview" class="page">
+
+      <article class="content-card">
+
+        <div class="preview-toolbar">
+
+          <div class="printer-controls">
+
+            <label for="printer-select">Printer</label>
+
+            <select id="printer-select">
+              <option value="">Loading printers...</option>
+            </select>
+
+            <button
+              class="secondary-btn"
+              id="refresh-printers"
+              type="button"
+            >
+              Refresh
+            </button>
+
+          </div>
+
+          <button
+            class="primary-btn"
+            id="print-cheque-btn"
+            type="button"
+          >
+            Print cheque
+          </button>
+
+        </div>
+
+
+        <div class="cheque-wrapper">
+
+          <div id="cheque-sheet">
+
+            <div class="date-field" id="print-date"></div>
+
+            <div class="payee-field" id="print-payee"></div>
+
+            <div class="words-field" id="print-words"></div>
+
+            <div class="figures-field" id="print-amount"></div>
+
+          </div>
+
+        </div>
+
+
+        <p class="preview-note">
+          Positioning preview only. This application does not reproduce
+          a bank's cheque background. Verify positioning with a test
+          print on plain paper first.
+        </p>
+
+
+        <button
+          class="secondary-btn"
+          id="back-to-form"
+          type="button"
+        >
+          ← Back to cheque details
+        </button>
+
+      </article>
+
+    </section>
+
+
+    <!-- TOAST MESSAGE -->
+
+    <div
+      id="toast"
+      class="toast"
+      role="status"
+      aria-live="polite"
+    ></div>
+
+  </main>
+
+</div>
+
+<script src="js/renderer.js"></script>
+
+</body>
+</html>
