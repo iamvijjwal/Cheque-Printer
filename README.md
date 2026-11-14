@@ -1,18 +1,18 @@
 # 🧾 Cheque Printer
 
-<p align="center">
+<p>
 <strong>A simple and efficient application for preparing and printing cheques.</strong>
 <br>
 Simplify cheque preparation, reduce manual effort, and make cheque printing easier.
 </p>
 
-📌 Overview
+## 📌 Overview
 
 Cheque Printer is an application designed to simplify the process of preparing and printing cheques. It provides a convenient way to enter cheque details and generate print-ready output.
 
 The goal is to make cheque preparation easier, faster, and more organized while reducing errors associated with manually writing cheque details.
 
-✨ Features
+##✨ Features
 📝 Cheque Preparation – Enter cheque-related information conveniently.
 🖨️ Easy Printing – Simplify the cheque printing process.
 🎯 Improved Accuracy – Reduce manual writing errors.
@@ -22,7 +22,7 @@ The goal is to make cheque preparation easier, faster, and more organized while 
 
 The technologies and frameworks used in this project can be listed here.
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 Follow these instructions to set up the project on your local machine.
 
@@ -61,17 +61,7 @@ npm run dev
 
 Open the local URL displayed in your terminal to access the application.
 
-📸 Screenshots
-
-Add screenshots of the application here to showcase its interface and cheque printing functionality.
-
-<!-- Add your screenshots below:
-
-![Cheque Printer Home Page](screenshots/home.png)
-
--->
-
-📁 Project Structure
+## 📁 Project Structure
 text
 Cheque-Printer/
 ├── public/
@@ -84,14 +74,14 @@ Cheque-Printer/
 
 Note: Update this structure according to the actual project files.
 
-💡 Future Improvements
+## 💡 Future Improvements
 Support for multiple bank cheque formats.
 Customizable cheque layouts.
 Print alignment and positioning controls.
 Bulk cheque printing.
 Cheque preview before printing.
 Export and document generation options.
-🤝 Contributing
+## 🤝 Contributing
 
 Contributions, suggestions, and bug reports are always welcome!
 
@@ -119,11 +109,11 @@ git push origin feature/your-feature
 
 5. Open a Pull Request.
 
-📄 License
+## 📄 License
 
 Please refer to the repository's LICENSE file for licensing information.
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Vijjwal
 
